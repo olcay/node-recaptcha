@@ -1,18 +1,18 @@
-# node-recaptcha
+# node-recaptcha2
 
-node-recaptcha renders and verifies [Recaptcha](http://www.google.com/recaptcha) captchas.
+node-recaptcha2 renders and verifies [reCAPTCHA](https://google.com/recaptcha) captchas.
 
-**NOTE**: This release currently only supports Recaptcha [version 1](https://developers.google.com/recaptcha/old/intro).
+**NOTE**: This release currently only supports reCAPTCHA [version 2](https://developers.google.com/recaptcha/intro).
 
 ## Installation
 
 Via git:
 
-    $ git clone git://github.com/mirhampt/node-recaptcha.git ~/.node_libraries/node-recaptcha
+    $ git clone git://github.com/olcay/node-recaptcha.git ~/.node_libraries/node-recaptcha
 
 Via npm:
 
-    $ npm install recaptcha
+    $ npm install node-recaptcha2
 
 ## Setup
 
@@ -25,19 +25,6 @@ To run the tests for this module, you will first need to install
 [nodeunit](http://github.com/caolan/nodeunit).  Then, simply run:
 
     $ nodeunit test.js
-
-## Customizing the Recaptcha
-
-See these [instructions](https://developers.google.com/recaptcha/old/docs/customization)
-for help customizing the look of Recaptcha.  In brief, you will need to add a
-structure like the following before the form in your document:
-
-    <script type="text/javascript">
-        var RecaptchaOptions = {
-           theme : 'clean',
-           lang  : 'en'
-        };
-    </script>
 
 ## Example Using [Express](http://www.expressjs.com)
 
@@ -69,8 +56,7 @@ app.js:
     app.post('/', function(req, res) {
         var data = {
             remoteip:  req.connection.remoteAddress,
-            challenge: req.body.recaptcha_challenge_field,
-            response:  req.body.recaptcha_response_field
+            response:  req.body['g-recaptcha-response']
         };
         var recaptcha = new Recaptcha(PUBLIC_KEY, PRIVATE_KEY, data);
 

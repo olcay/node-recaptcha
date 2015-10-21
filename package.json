@@ -1,15 +1,37 @@
 {
-    "name": "recaptcha2",
-    "description": "Display and verify a Recaptcha captcha",
-    "version": "1.2.1",
-    "author": "Olcay Bayram",
-    "main": "./lib/recaptcha.js",
-    "devDependencies": {
-      "nodeunit": "*"
-    },
-    "engines": { "node": ">= 0.6.0" },
-    "repository": {
-        "type": "git",
-        "url" : "https://github.com/olcay/node-recaptcha.git"
-    }
+  "name": "node-recaptcha2",
+  "description": "Display and verify a Recaptcha captcha",
+  "version": "2.1.1",
+  "author": "Olcay Bayram",
+  "main": "./lib/recaptcha.js",
+  "devDependencies": {
+    "nodeunit": "*",
+    "https": "*",
+    "querystring": "*"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olcay/node-recaptcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/olcay/node-recaptcha/issues"
+  },
+  "homepage": "https://github.com/olcay/node-recaptcha#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "node",
+    "recaptcha",
+    "google",
+    "nocaptcha",
+    "captcha"
+  ],
+  "license": "MIT"
 }
