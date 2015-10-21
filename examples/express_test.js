@@ -45,8 +45,7 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res) {
     var data = {
         remoteip:  req.connection.remoteAddress,
-        challenge: req.body.recaptcha_challenge_field,
-        response:  req.body.recaptcha_response_field
+        response:  req.body['g-recaptcha-response']
     };
     var recaptcha = new Recaptcha(PUBLIC_KEY, PRIVATE_KEY, data);
 

@@ -1,8 +1,8 @@
 {
-    "name": "recaptcha",
+    "name": "recaptcha2",
     "description": "Display and verify a Recaptcha captcha",
     "version": "1.2.1",
-    "author": "Michael Hampton <mirhampt+github@gmail.com>",
+    "author": "Olcay Bayram",
     "main": "./lib/recaptcha.js",
     "devDependencies": {
       "nodeunit": "*"
@@ -10,6 +10,6 @@
     "engines": { "node": ">= 0.6.0" },
     "repository": {
         "type": "git",
-        "url" : "https://github.com/mirhampt/node-recaptcha.git"
+        "url" : "https://github.com/olcay/node-recaptcha.git"
     }
 }
