@@ -1,8 +1,11 @@
 {
-  "name": "node-recaptcha2",
-  "description": "Display and verify a Recaptcha captcha",
-  "version": "2.1.1",
+  "name": "@akitabox/node-recaptcha",
+  "description": "Display and verify a Recaptcha captcha with support for node servers behind proxies",
+  "version": "2.2.0",
   "author": "Olcay Bayram",
+  "contributors": [
+    "AkitaBot <info@akitabox.com> (http://home.akitabox.com)"
+  ],
   "main": "./lib/recaptcha.js",
   "devDependencies": {
     "nodeunit": "*",
@@ -14,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olcay/node-recaptcha.git"
+    "url": "git+https://github.com/akitabox/node-recaptcha.git"
   },
   "bugs": {
-    "url": "https://github.com/olcay/node-recaptcha/issues"
+    "url": "https://github.com/akitabox/node-recaptcha/issues"
   },
-  "homepage": "https://github.com/olcay/node-recaptcha#readme",
+  "homepage": "https://github.com/akitabox/node-recaptcha#readme",
   "directories": {
     "example": "examples"
   },
@@ -31,7 +34,11 @@
     "recaptcha",
     "google",
     "nocaptcha",
-    "captcha"
+    "captcha",
+    "proxy"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.78.0"
+  }
 }
