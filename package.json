@@ -8,8 +8,9 @@
   ],
   "main": "./lib/recaptcha.js",
   "devDependencies": {
-    "nodeunit": "*",
+    "chai": "^3.5.0",
     "https": "*",
+    "mocha": "^3.1.2",
     "querystring": "*"
   },
   "engines": {
@@ -39,6 +40,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "request": "^2.78.0"
+    "request": "^2.78.0",
+    "underscore": "^1.8.3"
   }
 }
